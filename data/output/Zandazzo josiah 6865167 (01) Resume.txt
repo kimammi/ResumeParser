@@ -1,0 +1,56 @@
+Josiah Luke Randazzo
+
+(719) 640-1108
+
+Jl_Randazzo@hotmail.com
+
+Objective
+
+Launch  my  software  development  career  in  an  ambitious  and  challenging  internship. 
+
+Education
+2015-Present
+
+Skills
+
+Portfolio
+
+Employment
+2015-Present
+
+Metropolitan State University of Denver, CO
+Computer  Science  Major,  B.S.,  and  Mathematics  minor,  projected  graduation  in 
+Summer/Fall 2019. 3.92 GPA.
+
+Object-Oriented Programming, most familiar with C#—NUnit testing (used for TDD), Moq, 
+and  many  other  libraries—very  familiar  with  Java  as  well;  object-Relational  Mapping 
+experience,  primarily  with  the  Entity  Framework;  MSSQL;  Experience  with  the  GNU 
+Compiler  Collection,  C,  C++,  and  system  calls  in  Linux  and  Windows;  Functional 
+Programming, some familiarity with LISP and Scala, and frequent use of C#’s higher-order 
+functions  and  Linq  libraries;  some  experience  with  Python  and  JavaScript  (jQuery)  in 
+addition  to  HTML  and  CSS;  version  control  experience  with  git  (github.com  and 
+bitbucket.com)—frequently used within Visual Studio, from the command line, as well as 
+in SourceTree; Agile experience (Scrum). 
+
+Refer to www.github.com/jl-randazzo/someportfolio. It’s a combination of real problems 
+I  solved  and  academic  work.  Most  of  what’s  available  in  this  repository  was  written 
+alongside a team. I included a personal project I’ve been working on with a friend written 
+in C#; I invite you look. It nicely demonstrates my comfort level with O-O programming, 
+design  patterns,  data  structures,  using  mathematics  in  my  code,  and  C#.  Go  to 
+SomePortfolio\C#\HIGHLIGHTED_Observer_Subjects. Feel free to peruse the rest of my 
+GitHub account as well; at this point, it’s mostly a hodgepodge of classwork and some 
+independent work. In the near future, I’ll be making substantial uploads. 
+
+Scott Friedman and Associates, Golden, CO
+Hired as an Administrative Assistant and Digital Content Manager. Responsibilities include 
+editing videos, audio, and company literature; providing technical support for hardware, 
+software,  network,  and  email-related  issues;  drafting  design  and  marketing  materials; 
+updating the company’s website and social media presence; maintaining client mailing 
+lists  and  databases;  keeping  calendar  up  to  date;  and  drafting,  sending,  and  keeping 
+record of client contracts, payments, and questionnaires. 
+
+References
+
+Available upon request.
+
+

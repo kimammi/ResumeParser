@@ -1,0 +1,398 @@
+index,file_path,extension,text,candidate_name,email,phone,university,Major,experience,platforms,database,programming,machinelearning,universities,languages,hobbies,open-source
+0,../data/input/example_resumes\Brendan_Herger_Resume.pdf,.pdf,"Brendan Herger
+
+Hergertarian.com | 13herger@gmail.com  |  + 1 (415) 582-7457
+
+1209 Page Street No. 7 San Francisco, Ca 94117
+
+Selected Experience
+
+Data Scientist
+
+Data Innovation Lab @ Capital One (San Francisco, Ca.)   06/15 - Now 
+Lead research team modeling for fraud problem space with class 
+imbalance & adversaries; H2O.ai, GraphLab, SKLearn
+Deployed sub-millisecond real time model; Apache Apex
+Recommended distributed machine learning frameworks for general 
+adoption at Capital One; H2O.ai, GraphLab, Apache Spark
+
+Various Technical Positions
+
+Lawfty (San Francisco, Ca.), RevUp Software (Redwood City, Ca.), 
+Perkins + Will Architecture (San Francisco, Ca.) & Lawrence Berkeley 
+National Lab. (Berkeley, Ca.)
+
+Front End Supervisor
+
+The Home Depot Pro (Colma, Ca.)                                        05/11 - 03/13
+Positions held: Cashier, Special Services Assoc., Tool Rental Assoc.
+Supervised and trained a staff of 10-30 team members
+
+Education
+MS, Analytics
+
+University of San Francisco, July 2015
+Relevant Coursework: Machine Learning, Adv. Machine Learning, Data 
+Acquisition, Exploratory Data Analysis, Relational Databases, NoSQL 
+Databases, Linear Regression Analysis, Time Series Analysis, Intro. SAS
+
+BS, Physics
+
+University of San Francisco, May 2014
+Minors: Computer Sciences, Mathematics
+Honors: University Scholar, President of ΠΜΕ Math Honors Society
+Relevant Coursework: Software Development, Data Structures & 
+Algorithms, Differential Eqn.’s, Linear Algebra, Graduate Econometrics
+
+Personal Projects
+
+Identified genre of Billboard 
+Hot 100 songs using ensemble 
+algorithm built with Support 
+Vector Machine, Neural Network, 
+Stochastic Gradient Boost, and 
+Random Forest  algorithms; 
+Python, Pandas, R and Scikit-Learn
+
+Implemented Naive Bayes text 
+classification algorithm and trained 
+this algorithm to correctly label 
+83% of movie reviews; Python, 
+numpy and Pandas
+
+Created database containing lyrics 
+of Billboard Hot 100 songs since 
+1958; R, Python, Pandas and 
+Beautiful Soup 4
+
+Built a multi-threaded web scraper 
+and search engine with web 
+user interface; Java, MySQL and 
+HTML5/CSS
+
+Built resume parsing package 
+which extracts text, finds contact 
+details, and checks for required 
+keywords; Python and Pandas
+
+Online
+
+Hergertarian.com
+
+github.com/bjherger
+
+linkedin.com/in/bjherger
+
+hergertarian.wordpress.com/
+
+",Brendan Herger,13herger@gmail.com,"('415', '582', '7457')","['University of San Francisco', 'University Scholar']","['MS, Analytics', 'BS, Physics']",{'developer'},{'Mac'},"{'SQL', 'MySQL'}","{'python', 'R', 'java', '.NET', 'C'}",{'sklearn'},{'Vrije Univesriteit'},set(),set(),"{'github', 'git'}"
+1,../data/input/example_resumes\john_smith.pdf,.pdf,"John Smith  
+
+ 
+
+ 
+
+2222 McCoy Road     Columbus, Ohio 44444    614-555-5555    sresume@kent.edu  www.linkedin.com/in/name 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+OBJECTIVE 
+Seeking a marketing internship with ABC Company in Spring 2017 to utilize my organizational and analytical skills. 
+ 
+EDUCATION  
+Bachelor of Business Administration 
+Kent State University   
+Major: Business Management 
+ 
+SIGNIFICANT COURSEWORK 
+Business Finance, Principles of Management, Legal Environment of Business 
+ 
+COMPUTER SKILLS 
+Microsoft Office: Word, PowerPoint, and basic Excel 
+Applications: SQL (Structure Query Language) 
+Programs: Adobe Photoshop, Movie Maker 
+Social Media Administration: LinkedIn, Twitter, Instagram, Facebook 
+ 
+WORK EXPERIENCE  
+Kent State University, Kent, Ohio 
+Resident Advisor 
+•  Collaborate with 10 building staff and campus administrators on a weekly basis to organize a pancake breakfast 
+
+Expected Graduation: May 2018 
+Kent, Ohio 
+GPA: 3.6 
+
+August 2015 - Present  
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+fundraiser for 200 attendees, raising $500 for community charity.  
+
+•  Utilize effective time management skills by creating and implementing 6 programs and activities each semester for 30 
+
+residents while balancing full-time course load and extracurricular commitments.  
+
+•  Demonstrate strong communication skills through interacting with 150 residents and campus administrators on a 
+
+weekly basis.  
+
+•  Facilitate problem-solving and conflict resolution amongst residents by serving as positive role model, mediator, and 
+
+leader through one-on-one and small group interventions.  
+
+ 
+Panini’s Bar and Grill, Cleveland, Ohio                     
+Server 
+•  Worked independently in a fast-paced environment while developing customer service skills with each guest to ensure 
+
+August 2014 - May 2015  
+
+ 
+
+ 
+
+ 
+
+their needs were consistently met. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+July 2014 - October 2015 
+
+•  Optimized persuasive skills to highlight nightly specials and engage each table’s attention. 
+•  Fostered cooperation within a staff of 7 to maintain a pleasant atmosphere. 
+ 
+LEADERSHIP EXPERIENCE  
+Harding Middle School, Columbus, Ohio 
+Soccer Assistant Coach  
+•  Executed strong communication skills by guiding and leading 20 seventh and eighth grade girls on team. 
+•  Served as positive role model by teaching young athletes about teamwork, respect, and conflict-resolution. 
+•  Planned and led weekly meetings with up to 15 parents, field managers and staff members. 
+•  Led team to its first regional championship in October 2015; recognized at school banquet with leadership award. 
+ 
+CAMPUS INVOLVEMENT 
+Member, Delta Sigma Pi 
+ 
+Member, Collegiate Business Association 
+ 
+VOLUNTEER EXPERIENCE  
+Relay for Life, Kent State University 
+Donation Processer, Greater Cleveland Food Bank 
+ 
+HONORS 
+Summit County Alumni Association Scholarship   
+Dean’s List 
+ 
+
+March 2015 
+December 2014 - February 2015 
+
+Spring 2014 - Present 
+Spring 2013 - Spring 2015 
+
+August 2016 - Present  
+August 2015 - Present  
+
+  
+ 
+
+  
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+",John Smith,sresume@kent.edu,"('614', '555', '5555')","['Relay for Life, Kent State University']","['Bachelor of Business Administration', 'Major: Business Management']","{'developer', 'Teacher'}",set(),{'SQL'},"{'C', 'R'}",set(),{'MIT'},set(),{'soccer'},set()
+2,../data/input/example_resumes\resume_Meyer.pdf,.pdf,"MONICA MEYER
+
+(415) · 497 · 7282 (cid:5) monica.meyer@comcast.net
+
+EDUCATION
+
+Master of Science in Analytics
+University of San Francisco
+
+Bachelor of Arts in Mathematics
+University of California, Santa Cruz
+Overall GPA: 3.5
+
+COURSE PROJECTS
+
+Expected June 2015
+
+July 2012
+
+Business Location Recommendation
+Sep 2014
+· Queried Yelp and Zillow APIs and performed exploratory data analysis necessary for project to help
+businesses decide where to open their next establishment.
+
+Text Classiﬁcation
+· Classiﬁed movie reviews as positive or negative using Naive Bayes in Python.
+· Found most important words in Reuter’s articles through term frequency, inverse document frequency
+on XML ﬁles in Python.
+
+July 2014
+
+WORK EXPERIENCE
+
+Bank of America
+Dec 2013 - June 2014
+Sales and Service Specialist
+Mill Valley, CA
+· Promoted due to proven ability to resolve complex service issues and process transactions accurately
+and eﬃciently to guarantee customer satisfaction and build customer conﬁdence and trust. Responsible
+for establishing, retaining and deepening relationships with customers to achieve team sales goals as
+well as providing proactive sales activities of basic products while referring more complex requests such
+as mortgages and investment products.
+
+Bank of America
+Aug 2012 - Dec 2013
+Teller
+Mill Valley, CA
+· Gained proﬁciency in retail banking operations, including computing ﬁgures, processing transactions
+with speed and accuracy and building customer loyalty through exceptional customer service. Learned
+to control large amounts of cash ﬂow, work within established policies, procedures and guidelines and
+acquired the ability to advise customers on products and services the bank has to oﬀer. Earned a
+promotion to the position of Sales and Service Specialist.
+
+SKILLS
+
+Programming
+Protocols & APIs
+Databases
+
+Python, R
+XML, JSON, REST
+MySQL, PostgreSQL
+
+",MONICA MEYER,monica.meyer@comcast.net,,['University of California'],"['Master of Science in Analytics', 'Bachelor of Arts in Mathematics']",set(),set(),"{'Postgress', 'SQL', 'MySQL'}","{'.NET', 'python', 'C', 'R'}",set(),set(),set(),set(),set()
+3,../data/input/example_resumes\Zandazzo josiah 6865167 (01) Resume.pdf,.pdf,"Josiah Luke Randazzo
+
+(719) 640-1108
+
+Jl_Randazzo@hotmail.com
+
+Objective
+
+Launch  my  software  development  career  in  an  ambitious  and  challenging  internship. 
+
+Education
+2015-Present
+
+Skills
+
+Portfolio
+
+Employment
+2015-Present
+
+Metropolitan State University of Denver, CO
+Computer  Science  Major,  B.S.,  and  Mathematics  minor,  projected  graduation  in 
+Summer/Fall 2019. 3.92 GPA.
+
+Object-Oriented Programming, most familiar with C#—NUnit testing (used for TDD), Moq, 
+and  many  other  libraries—very  familiar  with  Java  as  well;  object-Relational  Mapping 
+experience,  primarily  with  the  Entity  Framework;  MSSQL;  Experience  with  the  GNU 
+Compiler  Collection,  C,  C++,  and  system  calls  in  Linux  and  Windows;  Functional 
+Programming, some familiarity with LISP and Scala, and frequent use of C#’s higher-order 
+functions  and  Linq  libraries;  some  experience  with  Python  and  JavaScript  (jQuery)  in 
+addition  to  HTML  and  CSS;  version  control  experience  with  git  (github.com  and 
+bitbucket.com)—frequently used within Visual Studio, from the command line, as well as 
+in SourceTree; Agile experience (Scrum). 
+
+Refer to www.github.com/jl-randazzo/someportfolio. It’s a combination of real problems 
+I  solved  and  academic  work.  Most  of  what’s  available  in  this  repository  was  written 
+alongside a team. I included a personal project I’ve been working on with a friend written 
+in C#; I invite you look. It nicely demonstrates my comfort level with O-O programming, 
+design  patterns,  data  structures,  using  mathematics  in  my  code,  and  C#.  Go  to 
+SomePortfolio\C#\HIGHLIGHTED_Observer_Subjects. Feel free to peruse the rest of my 
+GitHub account as well; at this point, it’s mostly a hodgepodge of classwork and some 
+independent work. In the near future, I’ll be making substantial uploads. 
+
+Scott Friedman and Associates, Golden, CO
+Hired as an Administrative Assistant and Digital Content Manager. Responsibilities include 
+editing videos, audio, and company literature; providing technical support for hardware, 
+software,  network,  and  email-related  issues;  drafting  design  and  marketing  materials; 
+updating the company’s website and social media presence; maintaining client mailing 
+lists  and  databases;  keeping  calendar  up  to  date;  and  drafting,  sending,  and  keeping 
+record of client contracts, payments, and questionnaires. 
+
+References
+
+Available upon request.
+
+",Josiah Luke Randazzo,Jl_Randazzo@hotmail.com,"('719', '640', '1108')","['Metropolitan State University of Denver, CO']",['Computer Science Major'],{'developer'},"{'Linux', 'Windows'}",{'SQL'},"{'JavaScript', 'R', 'java', 'python', '.NET', 'C#', 'C'}",{'tensorflow'},set(),set(),set(),"{'github', 'git', 'bitbucket'}"
