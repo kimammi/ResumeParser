@@ -7,12 +7,13 @@ email,object,observations
 phone,object,observations
 university,object,observations
 Major,object,observations
-experience,object,observations
-platforms,object,observations
-database,object,observations
+Experience,object,observations
+Platforms,object,observations
+Database,object,observations
 programming,object,observations
-machinelearning,object,observations
-universities,object,observations
-languages,object,observations
-hobbies,object,observations
-open-source,object,observations
+Continuous Integration,object,observations
+Cyber-security,object,observations
+Machinelearning,object,observations
+Languages,object,observations
+Hobbies,object,observations
+Open-source,object,observations

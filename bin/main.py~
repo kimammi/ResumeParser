@@ -50,9 +50,14 @@ def extract():
     candidate_file_agg = list()
 
     # Create list of candidate files
-    for root, subdirs, files in os.walk(lib.get_conf('resume_directory')):
+    resume_directories = input("Please paste the directory containing all of the Resumes you'd like to parse:\n")
+    print(resume_directories)
+    for root, subdirs, files in os.walk(resume_directories):
         folder_files = map(lambda x: os.path.join(root, x), files)
         candidate_file_agg.extend(folder_files)
+
+    for x in candidate_file_agg:
+        print(x)
 
     # Convert list to a pandas DataFrame
     observations = pandas.DataFrame(data=candidate_file_agg, columns=['file_path'])
@@ -72,6 +77,9 @@ def extract():
     logging.info('End extract')
     return observations
 
+def increment(x, nlp, count):
+    field_extraction.university_extractor(x, nlp, count)
+    return count + 1
 
 def transform(observations, nlp):
     # TODO Docstring
@@ -85,9 +93,13 @@ def transform(observations, nlp):
     observations['email'] = observations['text'].apply(lambda x: lib.term_match(x, field_extraction.EMAIL_REGEX))
     observations['phone'] = observations['text'].apply(lambda x: lib.term_match(x, field_extraction.PHONE_REGEX))
 
+    # Extract education data
+    count = 0
+    observations['university'] = observations['text'].apply(lambda x: count = increment(x, nlp, count))
+    observations['Major'] = observations['text'].apply(lambda x: field_extraction.major_extractor(x, nlp))
+
     # Extract skills
     observations = field_extraction.extract_fields(observations)
-    observations['university'] = observations['text'].apply(lambda x: field_extraction.university_extractor(x, nlp))
 
     # Archive schema and return
     lib.archive_dataset_schemas('transform', locals(), globals())

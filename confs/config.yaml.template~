@@ -3,17 +3,17 @@ summary_output_directory: ../data/output
 data_schema_dir: ../data/schema
 
 extractors:
- experience:
+ Experience:
   - [Teacher, teaching, tutor]
   - [developer, software developer, software engineer, dev]
   - trader
 
- platforms:
+ Platforms:
   - Linux
   - Windows
   - [Mac, MacOS]
 
- database:
+ Database:
   - SQL
   - MySQL
   - [Postgress, Postgresql]
@@ -24,6 +24,10 @@ extractors:
   - C
   - C++
   - C#
+  - Scala
+  - Swift
+  - Pearl
+  - Visual Basic
   - .NET
   - Matlab
   - R
@@ -32,35 +36,32 @@ extractors:
   - PHP
   - JavaScript
 
+ Continuous Integration:
+  - Jenkins
+  - RedHat
 
- machinelearning:
+ Cyber-security:
+  - [cybersecurity, cyber-security, cyber security]
+Machinelearning: 
   - [sklearn, scikit-learn, sk-learn]
   - [tensorflow, tf, tensor-flow]
   - keras
   - h20
 
-
- universities:
-  - [TU Delft, TUDelft, Delft University of Technology]
-  - [Univerity of Twente, UTwente]
-  - [University of Amsterdam, UvA]
-  - [Vrije Univesriteit, VU University, VU Amsterdam, VU]
-  - MIT
-
- languages:
+ Languages:
   - Dutch
   - English
   - German
   - Spanish
   - [Chinese, Mandarin]
 
- hobbies:
+ Hobbies:
   - [swimming, swim]
   - [soccer, football]
   - painting
   - reading
 
- open-source:
+ Open-source:
   - github
   - bitbucket
   - gitlab

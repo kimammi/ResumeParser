@@ -23,13 +23,17 @@ def candidate_name_extractor(input_string, nlp):
     doc_persons = map(lambda x: x.text.strip(), doc_persons)
     doc_persons = list(doc_persons)
 
+
     # Assuming that the first Person entity with more than two tokens is the candidate's name
     if len(doc_persons) > 0:
+        print(doc_persons[0])
         return doc_persons[0]
+    print("NOT FOUND")
     return "NOT FOUND"
 
 def university_extractor(input_string, nlp):
     #Remove unnecessary spaces from file
+    input_string = re.sub('\t',' ', input_string)
     input_string = re.sub(' +', ' ', input_string)
 
     doc = nlp(input_string)
@@ -42,7 +46,8 @@ def university_extractor(input_string, nlp):
         for y in x.text.strip().split('\n'):
             doc_universities.append(y) 
 
-    doc_universities = filter(lambda x: 'University' in x or 'College' in x, doc_universities)
+    doc_universities = filter(lambda x: 'University' in x or 'College' in x or 'Polytechnic' in x or 'School' in x or 'State' in x
+            or 'Institute' in x, doc_universities)
     doc_universities = list(doc_universities)
     doc_universities = keep_unique(doc_universities)
 
@@ -50,35 +55,47 @@ def university_extractor(input_string, nlp):
         return doc_universities
     return ""
 
-patterna = [{"POS": "PROPN","OP":"*"}, {"POS": "PROPN","OP":"*"}, 
-            {"POS": "PROPN"}, {"TEXT": {"REGEX": "[Mm]ajor"}}]
-patternb = [{"TEXT": {"REGEX": "[Mm]ajor(ed)?"}}, {"TEXT": {"REGEX": ": ?"}}, {"POS": "PROPN","OP":"*"}, 
-            {"POS": "PROPN","OP":"*"}, {"POS": "PROPN"}]
-patternc = [{"TEXT": {"REGEX": "([Bb]achelor('s)?|[Mm]aster('s)?)"}}, {"TEXT": {"REGEX": "(of|in)"}}, 
-            {"TEXT": {"REGEX": "(Sciences?|Arts?)"}, "OP": "*"},
-            {"TEXT": {"REGEX": "(of|in)"}, "OP": "*"}, {"POS": "PROPN", "OP":"*"},{"POS": "PROPN", "OP":"*"},{"POS": "PROPN", "OP":"*"}]
-patternd = [{"TEXT": {"REGEX": "(B|M)\.?(S|A)\.?"}}, {"TEXT": {"REGEX": "(,|:|in|of|[Dd]egree)"}}, {"TEXT": {"REGEX": "(in|of)"}, "OP":"*"},
+patterna = [{"POS": "PROPN", "OP":"?"}, {"POS": "PROPN", "OP":"?"}, 
+            {"POS": "PROPN"}, {"TEXT": {"REGEX": "^[Mm]ajor$"}}]
+patternb = [{"TEXT": {"REGEX": "^[Mm]ajor(ed)?$"}}, {"TEXT": ":", "OP":"*"}, {"POS": "PROPN"}, 
+            {"POS": "PROPN","OP":"*"}, {"POS": "PROPN", "OP":"*"}]
+patternc = [{"TEXT": {"REGEX": "^([Aa]ssociate('?s)?|[Bb]achelor('?s)?|[Mm]aster('?s)?)$"}}, {"TEXT": {"REGEX": "^(of|in)$"}}, 
+            {"TEXT": {"REGEX": "^[Aa]pplied$"}, "OP":"*"},{"TEXT": {"REGEX": "^(Sciences?|Arts?)$"}, "OP": "*"},
+            {"TEXT":{"REGEX":"[Dd]egree"},"OP":"*"},
+            {"TEXT": {"REGEX": "^(of|in|,)$"}, "OP": "*"}, {"POS": "PROPN", "OP":"*"},{"POS": "PROPN", "OP":"*"},{"POS": "PROPN", "OP":"*"}]
+patternd = [{"TEXT": {"REGEX": "(B|M)\.?(S|A|B\.?A)\.?"}}, {"TEXT": {"REGEX": "^(,|:|in|of|[Dd]egree)$"}}, {"TEXT": {"REGEX": "^(in|of)$"}, "OP":"*"},
             {"POS":"PROPN", "OP":"*"},{"POS":"PROPN", "OP":"*"},{"POS":"PROPN"}]
+study_pattern = [{"TEXT": {"REGEX": "^[Ss]tud(ying|ent|ies)$"}},{"TEXT": {"REGEX": "^(in|of)"}, "OP":"*"}, 
+            {"POS": "PROPN", "OP":"*"},{"POS":"PROPN", "OP":"*"}, {"POS":"PROPN"}]
+student_pattern = [{"TEXT": {"REGEX": "^[Ss]tudent$"}}, {"TEXT": {"REGEX": "(of|in)"}}, 
+            {"POS": "PROPN", "OP":"*"},{"POS":"PROPN", "OP":"*"}, {"POS":"PROPN"}]
 
 def major_extractor(input_string, nlp):
     #Remove unnecessary spaces from file
-    input_string = re.sub(' +', ' ', input_string)
-
+    input_string = re.sub('\t',' ', input_string)
+    input_string = re.sub(' +',' ', input_string)
+    input_string = re.sub(r'[^\x00-\x80]',' ', input_string)
     doc = nlp(input_string)
-
-    matcher = Matcher(nlp.vocab)
+    
+    for x in doc:
+        print(x.text + '\\', end='')
+    matcher = Matcher(nlp.vocab, True)
     matcher.add("Major", None, patterna)
     matcher.add("Majorb", None, patternb)
     matcher.add("Degreea", None, patternc)
     matcher.add("Degreeb", None, patternd)
+    matcher.add("Studies", None, study_pattern)
+    matcher.add("Stedent", None, student_pattern)
     matches = matcher(doc)
 
     out_m = list()
+    
     for id, start, end in matches:
         out_m.append(doc[start:end].text)
     out_m = keep_unique(out_m)
     print('testing matches:\n')
     print(out_m)
+    #input()
 
     if len(out_m) > 0:
         return out_m

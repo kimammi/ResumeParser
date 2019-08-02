@@ -50,9 +50,14 @@ def extract():
     candidate_file_agg = list()
 
     # Create list of candidate files
-    for root, subdirs, files in os.walk(lib.get_conf('resume_directory')):
+    resume_directories = input("Please paste the directory containing all of the Resumes you'd like to parse:\n")
+    print(resume_directories)
+    for root, subdirs, files in os.walk(resume_directories):
         folder_files = map(lambda x: os.path.join(root, x), files)
         candidate_file_agg.extend(folder_files)
+
+    for x in candidate_file_agg:
+        print(x)
 
     # Convert list to a pandas DataFrame
     observations = pandas.DataFrame(data=candidate_file_agg, columns=['file_path'])
@@ -86,6 +91,7 @@ def transform(observations, nlp):
     observations['phone'] = observations['text'].apply(lambda x: lib.term_match(x, field_extraction.PHONE_REGEX))
 
     # Extract education data
+    count = 0
     observations['university'] = observations['text'].apply(lambda x: field_extraction.university_extractor(x, nlp))
     observations['Major'] = observations['text'].apply(lambda x: field_extraction.major_extractor(x, nlp))
 
