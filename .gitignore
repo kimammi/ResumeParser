@@ -10,6 +10,9 @@
 # Batch files
 *.bat
 
+# Data files
+data/output/*
+
 # Configuration files
 confs/*.yaml
 confs/*.yml
